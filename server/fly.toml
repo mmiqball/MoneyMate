@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for billowing-cherry-8732 on 2023-05-14T23:30:43-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "billowing-cherry-8732"
+primary_region = "atl"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0

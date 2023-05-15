@@ -1,0 +1,178 @@
+[debug] [2023-05-15T03:09:02.561Z] ----------------------------------------------------------------------
+[debug] [2023-05-15T03:09:02.562Z] Command:       /usr/local/bin/firebase /Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-05-15T03:09:02.563Z] CLI Version:   12.0.0
+[debug] [2023-05-15T03:09:02.563Z] Platform:      darwin
+[debug] [2023-05-15T03:09:02.563Z] Node Version:  v16.16.0
+[debug] [2023-05-15T03:09:02.564Z] Time:          Sun May 14 2023 23:09:02 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-15T03:09:02.565Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-15T03:09:02.574Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-15T03:09:02.576Z] > authorizing via signed-in user (iqbalmujtaba10@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mujtaba/Downloads/react-dashboards/server
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-15T03:09:15.936Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-15T03:09:15.941Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"moneymate","name":"moneymate"}
+[debug] [2023-05-15T03:09:16.266Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-05-15T03:09:16.268Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-05-15T03:09:16.273Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID moneymate. Please try again with a unique project ID.
+[debug] [2023-05-15T03:09:26.661Z] ----------------------------------------------------------------------
+[debug] [2023-05-15T03:09:26.663Z] Command:       /usr/local/bin/firebase /Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-05-15T03:09:26.663Z] CLI Version:   12.0.0
+[debug] [2023-05-15T03:09:26.663Z] Platform:      darwin
+[debug] [2023-05-15T03:09:26.664Z] Node Version:  v16.16.0
+[debug] [2023-05-15T03:09:26.665Z] Time:          Sun May 14 2023 23:09:26 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-15T03:09:26.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-15T03:09:26.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-15T03:09:26.677Z] > authorizing via signed-in user (iqbalmujtaba10@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mujtaba/Downloads/react-dashboards/server
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-15T03:09:43.827Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-15T03:09:43.832Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"moneymatemoneymatemoneymatemoneymate","name":"finapp"}
+[debug] [2023-05-15T03:09:44.145Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-05-15T03:09:44.146Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id must be at most 30 characters long]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at most 30 characters long"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-05-15T03:09:44.150Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id must be at most 30 characters long]
+    at responseToError (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-05-15T03:10:20.391Z] ----------------------------------------------------------------------
+[debug] [2023-05-15T03:10:20.393Z] Command:       /usr/local/bin/firebase /Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-05-15T03:10:20.393Z] CLI Version:   12.0.0
+[debug] [2023-05-15T03:10:20.394Z] Platform:      darwin
+[debug] [2023-05-15T03:10:20.394Z] Node Version:  v16.16.0
+[debug] [2023-05-15T03:10:20.395Z] Time:          Sun May 14 2023 23:10:20 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-15T03:10:20.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-15T03:10:20.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-15T03:10:20.407Z] > authorizing via signed-in user (iqbalmujtaba10@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mujtaba/Downloads/react-dashboards/server
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-15T03:10:28.462Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-15T03:10:28.464Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"moneymate1232142","name":"finapp"}
+[debug] [2023-05-15T03:10:28.909Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-15T03:10:28.915Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6520287278299543383"}
+[debug] [2023-05-15T03:10:28.918Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6520287278299543383 [none]
+[debug] [2023-05-15T03:10:29.523Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6520287278299543383 200
+[debug] [2023-05-15T03:10:29.529Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6520287278299543383 {"name":"operations/cp.6520287278299543383","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-05-15T03:10:29.535Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCloudProject (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-05-15T03:11:28.768Z] ----------------------------------------------------------------------
+[debug] [2023-05-15T03:11:28.770Z] Command:       /usr/local/bin/firebase /Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-05-15T03:11:28.770Z] CLI Version:   12.0.0
+[debug] [2023-05-15T03:11:28.770Z] Platform:      darwin
+[debug] [2023-05-15T03:11:28.771Z] Node Version:  v16.16.0
+[debug] [2023-05-15T03:11:28.775Z] Time:          Sun May 14 2023 23:11:28 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-15T03:11:28.776Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-15T03:11:28.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-15T03:11:28.787Z] > authorizing via signed-in user (iqbalmujtaba10@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mujtaba/Downloads/react-dashboards/server
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-15T03:11:36.692Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-15T03:11:36.694Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"moneymate1243553","name":"finapp"}
+[debug] [2023-05-15T03:11:37.184Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-05-15T03:11:37.189Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5615093817975531657"}
+[debug] [2023-05-15T03:11:37.193Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 [none]
+[debug] [2023-05-15T03:11:37.677Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 200
+[debug] [2023-05-15T03:11:37.682Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 {"name":"operations/cp.5615093817975531657"}
+[debug] [2023-05-15T03:11:38.185Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-05-15T03:11:38.190Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 [none]
+[debug] [2023-05-15T03:11:38.721Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 200
+[debug] [2023-05-15T03:11:38.727Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 {"name":"operations/cp.5615093817975531657"}
+[debug] [2023-05-15T03:11:39.730Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-05-15T03:11:39.735Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 [none]
+[debug] [2023-05-15T03:11:40.346Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 200
+[debug] [2023-05-15T03:11:40.347Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5615093817975531657 {"name":"operations/cp.5615093817975531657","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"59157939964","projectId":"moneymate1243553","lifecycleState":"ACTIVE","name":"finapp","createTime":"2023-05-15T03:11:38.433Z"}}
+[debug] [2023-05-15T03:11:40.352Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/moneymate1243553:addFirebase [none]
+[debug] [2023-05-15T03:11:40.993Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/moneymate1243553:addFirebase 403
+[debug] [2023-05-15T03:11:41.000Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/moneymate1243553:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-15T03:11:41.006Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-15T03:11:41.015Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/mujtaba/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from '@/components/FlexBetween'
-import PixIcon from '@mui/icons-material/Pix';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 type Props = {}
 
@@ -13,7 +13,7 @@ const Navbar = (props: Props) => {
         <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
             {/* left side of navbar */}
             <FlexBetween gap="0.75rem">
-                <PixIcon sx={{ fontSize: "28px" }}/>
+                <AccountBalanceIcon sx={{ fontSize: "28px" }}/>
                 <Typography variant="h4" fontSize="16px">MoneyMate</Typography>
             </FlexBetween>
             {/* right side of navbar */}
