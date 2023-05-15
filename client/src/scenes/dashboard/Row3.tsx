@@ -129,7 +129,7 @@ const Row3 = () => {
           </Box>
         </DashboardBox>
         <DashboardBox gridArea="i">
-          <BoxHeader title="Expenses by Category" sideText="+4%" />
+          <BoxHeader title="Expenses by Category" sideText="" />
           <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
             {pieData?.map((data, i) => (
             <Box key={`${data[0].name}-${i}`}>
@@ -155,7 +155,7 @@ const Row3 = () => {
           </FlexBetween>
         </DashboardBox>
         <DashboardBox gridArea="j">
-          <BoxHeader title="Summary" sideText='+15%' />
+          <BoxHeader title="Summary" sideText='' />
           <Box height="15px" margin="1.25rem 1rem 0.4rem 1rem" bgcolor={palette.primary[800]} borderRadius="1rem">
             <Box height="15px" bgcolor={palette.primary[600]} borderRadius="1rem" width="40%">
             </Box>
