@@ -163,7 +163,7 @@ const Row3 = () => {
           <Typography variant="h6" margin="0 1rem">
           According to the financial statements of XYZ Corporation, the company 
           generated a total revenue of $283,000 and a total profit of $212,000 
-          for the fiscal year. Our data suggests that XYZ had a successful year with strong revenue growth
+          for the fiscal year, suggesting that XYZ had a successful year with strong revenue growth
           and a high profit margin. 
           </Typography>
         </DashboardBox>
